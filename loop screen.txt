@@ -1,0 +1,8 @@
+@echo off
+set ADB_PATH=C:\Users\marcos\Downloads\platform-tools-latest-windows\platform-tools\adb.exe
+
+:loop
+echo Executing ADB tap command...
+%ADB_PATH% shell input tap 540 960
+timeout /t 5
+goto loop
